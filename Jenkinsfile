@@ -1,4 +1,5 @@
-echo "pipeline {
+cat <<EOF > Jenkinsfile
+pipeline {
     agent any
     stages {
         stage('Greet') {
@@ -7,5 +8,5 @@ echo "pipeline {
             }
         }
     }
-}" > Jenkinsfile
-
+}
+EOF
